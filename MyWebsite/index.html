@@ -1,0 +1,77 @@
+<hrml>
+    <head>
+        <title>
+            My first website.
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: beige;">
+
+        <!--
+
+        <h1>
+            This is the main heading!
+        </h1>
+
+        <h2>
+            This is a subheading!
+        </h2>
+
+        <p>
+            hhhhhhhi
+        </p>
+
+        <p>
+            Here's another sentence..<br>that continues on the next line!
+            <br>hahahah
+        </p>
+    -->
+    <div class="row">
+        <div class="image-container"><img id="donut1" src="img/图片_画板 1.png" with="200" height="200"/></div>
+        <div class="image-container"><img id="donut2" src="img/图片_画板 3.png" with="200" height="200"/></div>
+        <div class="image-container"><img id="donut3" src="img/图片-02.png" with="100" height="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="donut4" src="img/图片-03.png" with="200" height="200"/></div>
+        <div class="image-container"><img id="donut5" src="img/图片-04.png" with="200" height="200"/></div>
+        <div class="image-container"><img id="donut6" src="img/图片-05.png" with="200" height="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="donut7" src="img/图片-07.png" with="200" height="200"/></div>
+        <div class="image-container"><img id="donut8" src="img/图片-08.png" with="200" height="200"/></div>
+        <div class="image-container"><img id="donut9" src="img/图片-09.png" with="200" height="200"/></div>
+    </div>
+    
+
+        <script>
+            var sound1 = new buzz.sound("sound/Jane Street - TrackTribe.mp3");
+            var sound2 = new buzz.sound("sound/O Holy Night - DJ Williams.mp3")
+            var sound3 = new buzz.sound("sound/The Last Goodbye.mp3")
+            var sound4 = new buzz.sound("sound/Mulholland - King Canyon.mp3")
+            var sound5 = new buzz.sound("sound/We Wish You A Merry Christmas - DJ Williams.mp3")
+            var sound6 = new buzz.sound("sound/As You Were - TrackTribe.mp3")
+            var sound7 = new buzz.sound("sound/Here it Comes - TrackTribe.mp3")
+            var sound8 = new buzz.sound("sound/I Wish I Knew - Otis McDonald.mp3")
+            var sound9 = new buzz.sound("sound/Siestita - Quincas Moreira.mp3")
+
+
+            window.onload = function() {
+                document.getElementById('donut1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('donut2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('donut3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('donut4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('donut5').addEventListener('click', function () {sound5.play();});
+                document.getElementById('donut6').addEventListener('click', function () {sound6.play();});
+                document.getElementById('donut7').addEventListener('click', function () {sound7.play();});
+                document.getElementById('donut8').addEventListener('click', function () {sound8.play();});
+                document.getElementById('donut9').addEventListener('click', function () {sound9.play();});
+            };
+
+        </script>
+        
+    </body>
+
+</html>
